@@ -24,8 +24,18 @@ Khulna University of Engineering & Technology
 In life everybody has a turn back moment. You have the moment where you can go forward or you can give up. But the thing you have to keep in mind before you give up is that if you give up, the guarantee is it will never happen. That's the guarantee it will never happen under the sun! THE ONLY WAY THE POSSIBILITY REMAINS, THAT IT CAN BE HAPPEN IS IF YOU NEVER GIVE UP NO MATTER WHAT.
 */
 
+const int mod = 1e9 + 7;
+
 void solve()
 {
+    int n, k;
+    cin >> n >> k;
+    int ans = 1;
+    for (int i = 1; i <= k; ++i)
+    {
+        ans = (1LL * ans * n) % mod;
+    }
+    cout << ans << '\n';
 }
 
 int main()

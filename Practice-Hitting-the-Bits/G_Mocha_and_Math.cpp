@@ -26,6 +26,19 @@ In life everybody has a turn back moment. You have the moment where you can go f
 
 void solve()
 {
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    for (int i = 0; i < n; ++i)
+    {
+        cin >> v[i];
+    }
+    int ans = v[0];
+    for (int i = 1; i < n; ++i)
+    {
+        ans &= v[i];
+    }
+    cout << ans << '\n';
 }
 
 int main()
